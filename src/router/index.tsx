@@ -27,7 +27,7 @@ const appRouter = createBrowserRouter([
         Component: lazy(() => import("../pages/parkings")),
         children: [
           {
-            path: "/parkings/spaceId",
+            path: "/parkings/:spaceId",
             Component: lazy(() => import("../pages/parkings/[id]")),
           },
         ],
